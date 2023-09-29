@@ -10,4 +10,4 @@
 #SBATCH --reservation=bootcamp
 
 module purge
-singularity exec --bind $PWD --nv pytorch_2.0.1-cuda11.7-cudnn8-runtime.sif python CIFAR10_RestNet50.py
+singularity exec --bind $PWD --nv pytorch_2.0.1-cuda11.7-cudnn8-runtime.sif python CIFAR10_ResNet50.py
