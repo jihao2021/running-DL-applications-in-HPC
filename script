@@ -5,8 +5,8 @@
 #SBATCH --mem=32g
 #SBATCH --time=02:00:00
 #SBATCH --partition=gpu
-#SBATCH --gres=gpu:a40:1
-#SBATCH --account=wjendrze_120
+#SBATCH --gres=gpu:1
+##SBATCH --account=hpcsuppt_613
 
 module purge
 eval "$(conda shell.bash hook)"
