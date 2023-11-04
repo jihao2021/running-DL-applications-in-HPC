@@ -3,10 +3,11 @@
 #SBATCH --ntasks=1
 #SBATCH --cpus-per-task=2
 #SBATCH --mem=32g
-#SBATCH --time=02:00:00
+#SBATCH --time=01:00:00
 #SBATCH --partition=gpu
-#SBATCH --gres=gpu:1
-##SBATCH --account=hpcsuppt_613
+#SBATCH --gres=gpu:p100:1
+#SBATCH --account=hpcsuppt_613
+#SBATCH --reservation=hacksc
 
 module purge
 eval "$(conda shell.bash hook)"
