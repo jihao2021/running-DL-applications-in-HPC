@@ -7,7 +7,7 @@
 #SBATCH --partition=gpu
 #SBATCH --gres=gpu:p100:1
 #SBATCH --account=hpcsuppt_613
-#SBATCH --reservation=hacksc
+##SBATCH --reservation=hacksc
 
 module purge
 eval "$(conda shell.bash hook)"
